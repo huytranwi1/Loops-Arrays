@@ -1,23 +1,26 @@
 // Create a JavaScript code that accepts an array of numbers
-
-// we can create a function that take in one parameter our function method called arr
- function arrNumbers (number) {
-
-//create two variables, one take in the given arrays and one push the odd arrays
-
-//let arrNumbers = [givenArrays];
-// let inputArray = [2,4,6,8,11,20,15,22];
-let oddNumber = [];
+// create a function that take in 1 parameter
 
 
-// let do a for loop with conditional statement
-// and returns a new array with only the odd numbers from the original array. 
+function odd(oddNumber) {
 
-for(let i=0; i<number.length; i++) {
-    if(number[i]%2 !== 0){
-       oddNumber.push(number[i])
+    // we also need a variable that take in an empty array
+    let oddArr = [];
+
+    // create a for loop that will loop through the oddNumber parameter and increment because we want the program to count all number in array
+    for(let i = 0; i<oddNumber.length; i++) {
+
+        // we need a conditional statement that says if we divide our given array by 2 and if it remainder is odd or even
+        if((oddNumber[i]%2) !== 0) {
+
+            // we need to push the given array any odd number into our oddArr variable
+            oddArr.push(oddNumber[i])
+        }
     }
- }
-     console.log(oddNumber);
+    // we return the value of oddArr variable
 
- }
+    console.log(oddArr)
+}
+
+
+

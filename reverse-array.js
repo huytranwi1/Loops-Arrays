@@ -5,9 +5,11 @@
 const Arr = [];
 
 // create a loop that reverse given array
+// since we are reversing, instead of i=0, we will let i=Array variable, and i would be greater than 0
+for (let i=Arr.length -1; i >=0; i--) {
 
-for (let i=Arr.length - 1; i >=0; i--) {
+    // once console, should reverse the number
     console.log(Arr[i])
 }
 
-// once console, should reverse the number
+console.log("good work");
